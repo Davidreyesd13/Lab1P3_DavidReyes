@@ -11,13 +11,13 @@ int main(){
 	while (opcion!=0) {
 		switch (opcion) {
 			case 1:
-				
+				s1 = 0; s2 = 0; s3 = 0;
 				cout << "Ingrese un valor para N: ";
 				cin >> n;
 				//division
-				x1 = 1.0f / n;
+				x1 = 1.0 / n;
 				x2 = 1.0 / n;
-				x3 = 1.0L / n;
+				x3 = 1.0 / n;
 
 				// suma de las x
 				i = 0;
@@ -29,13 +29,13 @@ int main(){
 				}
 
 				// calcular
-				e1 = fabs(1.0f - s1);
+				e1 = fabs(1.0 - s1);
 				e2 = fabs(1.0 - s2);
-				e3 = fabsl(1.0L - s3);
+				e3 = fabsl(1.0 - s3);
 
 				// Impresión 
-				cout << "Error con float: " << e1 << endl;
 				cout << "Error con double: " << e2 << endl;
+				cout << "Error con float: " << e1 << endl;
 				cout << "Error con long double: " << e3 << endl;
 
 			break;
